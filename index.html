@@ -49,6 +49,11 @@
     var slap = new Tone.Player({
        "url" : "slap.mp3",
        "retrigger" : true
+     });
+        
+    var borat = new Tone.Player({
+        "url" : "borat.mp3",
+        "retrigger" : true
     });
     
     slap.connect(Tone.Master);
@@ -56,6 +61,13 @@
     function mouseActions(event) {
         slap.start();
     }
+        
+    borat.connect(Tone.Master);
+        
+    new Tone.Delay ([2000][, 2000])
+delayTime {2000}
+     function mouseActions(event){
+         borat.start();
     </script>
 
 </body>
